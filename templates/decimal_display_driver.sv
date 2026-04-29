@@ -43,12 +43,12 @@ module decimal_display_driver (
 
   // Pack scalar ports into arrays for use in the generate loop.
   // value_a[i] drives HEX(2i+1) (tens) and HEX(2i) (ones).
-  logic [6:0] value_a[3];
+  logic [6:0] value_a[3]; // Defining array [value0, value1, value2]
   assign value_a[0] = value0;
   assign value_a[1] = value1;
   assign value_a[2] = value2;
 
-  logic blank_a[3];
+  logic blank_a[3]; // Defining array [blank0, blank1, blank2]
   assign blank_a[0] = blank0;
   assign blank_a[1] = blank1;
   assign blank_a[2] = blank2;
@@ -61,11 +61,52 @@ module decimal_display_driver (
   assign HEX4 = hex_a[4];
   assign HEX5 = hex_a[5];
 
+  //Holds the calculations for the most and least significant places
+  logic [3:0] least_sig_place_vals[3];
+  logic [3:0] most_sig_place_vals[3];
+
   genvar i;
   generate
     for (i = 0; i < 3; i = i + 1) begin : g_digit_pair
-      // Fill this in
+      least_sig_place_vals[i] = value_a[i] % 10; //Assigning the ones place
+      case (least_sig_place_vals[i])
+        4'd0: hex_a[2*i] = ~6'b0011111;
+        4'd1: hex_a[2*i] = ~6'b0000110;
+        4'd2: hex_a[2*i] = ~6'b1011011;
+        4'd3: hex_a[2*i] = ~6'b1001111;
+        4'd4: hex_a[2*i] = ~6'b1100110;
+        4'd5: hex_a[2*i] = ~6'b1101101;
+        4'd6: hex_a[2*i] = ~6'b1111101;
+        4'd7: hex_a[2*i] = ~6'b0000111;
+        4'd8: hex_a[2*i] = ~6'b1111111;
+        4'd9: hex_a[2*i] = ~6'b1101111;
+        default: hex_a[2*i] = ~6'b1111001; // Default (Error) case displasy an E
+      endcase
+
+      most_sig_place_vals[i] = (value_a[i] - (value_a[i] % 10))/10; // Taking the tens component and dividing by ten
+      case (most_sig_place_vals[i])
+        4'd0: hex_a[2*i+1] = ~6'b0011111;
+        4'd1: hex_a[2*i+1] = ~6'b0000110;
+        4'd2: hex_a[2*i+1] = ~6'b1011011;
+        4'd3: hex_a[2*i+1] = ~6'b1001111;
+        4'd4: hex_a[2*i+1] = ~6'b1100110;
+        4'd5: hex_a[2*i+1] = ~6'b1101101;
+        4'd6: hex_a[2*i+1] = ~6'b1111101;
+        4'd7: hex_a[2*i+1] = ~6'b0000111;
+        4'd8: hex_a[2*i+1] = ~6'b1111111;
+        4'd9: hex_a[2*i+1] = ~6'b1101111;
+        default: hex_a[2*i+1] = ~6'b1111001; // Default (Error) case displasy an E
+      endcase
+
+      // Blanking procedure
+      if(blank_a[i]) begin
+        hex_a[2*i] = ~6'b0000000;
+        hex_a[2*i+1] = ~6'b0000000;
+      end
+      
     end
   endgenerate
 
 endmodule
+
+
