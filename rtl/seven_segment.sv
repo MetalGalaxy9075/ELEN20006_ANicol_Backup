@@ -1,11 +1,15 @@
 // Seven segment display driver for hex digits
+//  Converts a binary input into a 7 element output to drive a 
+//  standard hexidecimal display.
 //
 // Parameter:
 //  Active Low (int) : 1 describes the hardware as active low
+//    0 describes active high
 //
 // Ports:
 //  digit    [3:0] : Hexedecimal digit to display
-//  blank          : When high, all segments are off
+//  blank          : When high, all segments are off, otherwise all segments
+//                   are on
 //  segments [6:0] : Segment outputs [g,f,e,d,c,b,a]
 
 `timescale 1ns / 1ps

@@ -1,0 +1,99 @@
+\documentclass{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{newtxtext}
+\usepackage[T1]{fontenc}
+\usepackage{float}
+
+\title{Digital Clock: Module Construction and Project Details.}
+\author{Alasdair Nicol. S.N:1759586}
+\date{1/5/2026}
+
+
+\begin{document}
+
+\maketitle
+\pagebreak
+\tableofcontents
+\pagebreak
+
+\section{Project Setup}
+This section covers key information about the project settings, 
+and backup settings for the project.
+
+\subsection{Backup}
+Document was backed up both locally and in an online repository 
+using the git comandline tool. A backup was made at the end of 
+each module design cycle and before closing the project workspace.
+
+\section{Modules}
+This section covers the function and testing of each module in 
+the project.
+\pagebreak
+
+\subsection{Module 1: Seven Segment}
+\subsubsection{Waveform}
+The waveform in figure \ref{fig:ssd} demonstrates the correct 7f output (1111111) for 
+the active low display when the blank signal is high. Otherwise,
+ the output displays the correct bit encoding for the given 
+input value.
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{Images/seven_segment.png}
+  \caption{Waveform generated for the seven segment module.}
+  \label{fig:ssd}
+\end{figure}
+
+\subsection{Module 2: Up Down Counter}
+\subsubsection{Waveform}
+When the enable signal is low, the counter correctly holds onto the 
+current value of 0 (as seen in figure \ref{fig:udc}), before counting up in increments of one when both 
+the enable pin and up pin are high. Furthermore, the timer correctly 
+counts backwards with a unit of one at the next clock signal after the 
+up signal goes low.
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{Images/up_down_counter.png}
+  \caption{Waveform generated for the up down counter.}
+  \label{fig:udc}
+\end{figure}
+
+\subsection{Module 3: Binary to BCD}
+\subsubsection{Waveform}
+As can be seen with the bin signal of 63 in figure \ref{fig:btb}, the 
+circuit correctly breaks down the hexadecimal 63( decimal 99) into the 
+ones and tens components of 9 and 9. 
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{Images/binary_to_bcd.png}
+  \caption{Waveform generated for the binary to bcd converter.}
+  \label{fig:btb}
+\end{figure}
+
+\subsection{Module 4: HMS Counter}
+\subsubsection{Waveform}
+The seconds signal of figure /ref{fig:hms} successfully iterates to 4 on
+ the rising edge of the rising edge of the clock, where it then switches to 
+0 and triggers an iteration in the minutes signal. This is the expected 
+ defined bahvaiour given the bit width and max count values used to test 
+the circuit. The enable signal is also seen to hold the seconds signal at 0 
+from time 0 to the high enable signal.
+\begin{figure}[H]
+  \includegraphics[width=\linewidth]{Images/hms_counter.png}
+  \caption{Waveform generated for the binary to bcd converter.}
+  \label{fig:hms}
+\end{figure}
+
+
+\section{Report Qestions}
+
+\subsection{Report 1}
+Blank is a 1 bit wide logic signal, while ACTIVE LOW is defined as 
+an integer, which is a multi-bit data type (32 by default) which will 
+throw a warning if truncated.
+
+\subsection{Report 4}
+BCD is a method of encoding decimal bits in binary that reserves a 
+number of bits (usually 4 for 0-9) for each decimal digit, before 
+concatenating all of the digits into a single register. Storing the 
+digits individually provides greater accuracy at high counts, and helps 
+to avoid rounding errors making it a common tool in precision counters.
+
+\end{document}

@@ -1,0 +1,14 @@
+\contentsline {section}{\numberline {0.1}Project Setup}{2}{}%
+\contentsline {subsection}{\numberline {0.1.1}Backup}{2}{}%
+\contentsline {section}{\numberline {0.2}Modules}{2}{}%
+\contentsline {subsection}{\numberline {0.2.1}Module 1: Seven Segment}{3}{}%
+\contentsline {subsubsection}{Waveform}{3}{}%
+\contentsline {subsection}{\numberline {0.2.2}Module 2: Up Down Counter}{3}{}%
+\contentsline {subsubsection}{Waveform}{3}{}%
+\contentsline {subsection}{\numberline {0.2.3}Module 3: Binary to BCD}{4}{}%
+\contentsline {subsubsection}{Waveform}{4}{}%
+\contentsline {subsection}{\numberline {0.2.4}Module 4: HMS Counter}{5}{}%
+\contentsline {subsubsection}{Waveform}{5}{}%
+\contentsline {section}{\numberline {0.3}Report Qestions}{6}{}%
+\contentsline {subsection}{\numberline {0.3.1}Report 1}{6}{}%
+\contentsline {subsection}{\numberline {0.3.2}Report 4}{6}{}%

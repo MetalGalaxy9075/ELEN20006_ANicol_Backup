@@ -1,3 +1,16 @@
+// Up down counter:
+//  Counts up or down by one unit to a given maximum value using a 
+//  specified bit width
+//
+// Parameter:
+//  int MAX : maximum count value
+//  int WIDTH : the bit width of the count variable
+//
+// Ports:
+//  clk               : Clock input signal to update flip flops
+//  enable            : Enables counting function. Holds current val if 0
+//  up                : Counter counts up when up is 1, otherwise counts down
+//  logic [WIDTH-1:0] : Binary encoded count output
 `timescale 1ns / 1ps
 
 module up_down_counter #(
