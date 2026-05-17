@@ -11,7 +11,7 @@
 //  blank          : When high, all segments are off, otherwise all segments
 //                   are on
 //  segments [6:0] : Segment outputs [g,f,e,d,c,b,a]
-
+//
 `timescale 1ns / 1ps
 
 module seven_segment #(
@@ -43,6 +43,7 @@ module seven_segment #(
         4'hd: segments_active_high = 7'b1011110;  // b,c,d,e,g
         4'he: segments_active_high = 7'b1111001;  // a,d,e,f,g
         4'hf: segments_active_high = 7'b1110001;  // a,e,f,g
+        default: segments_active_high = 7'b0111111;
       endcase
     else segments_active_high = 7'b0000000;
 

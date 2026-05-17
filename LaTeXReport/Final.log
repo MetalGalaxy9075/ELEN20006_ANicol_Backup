@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  2 MAY 2026 13:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.7.28)  17 MAY 2026 23:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -151,7 +151,14 @@ File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 10.0pt on input line 13.
- (./Final.aux)
+ (./Final.aux
+
+LaTeX Warning: Label `fig:procyosys' multiply defined.
+
+
+LaTeX Warning: Label `fig:procyosys' multiply defined.
+
+)
 \openout1 = `Final.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -213,15 +220,17 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 1.
-)
+
+
+[1
+
+])
 \tf@toc=\write3
 \openout3 = `Final.toc'.
 
 
 
-[1
-
-]
+[2]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 20.
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
@@ -230,58 +239,359 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 12.0pt on input line 24.
 
 
-[2]
+[3]
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 (Font)              scaled to size 10.0pt on input line 35.
-<Images/seven_segment.png, id=14, 748.7975pt x 719.68875pt>
+<Images/seven_segment.png, id=17, 748.7975pt x 719.68875pt>
 File: Images/seven_segment.png Graphic file (type png)
 <use Images/seven_segment.png>
 Package pdftex.def Info: Images/seven_segment.png  used on input line 41.
 (pdftex.def)             Requested size: 345.0pt x 331.58795pt.
-<Images/up_down_counter.png, id=16, 748.7975pt x 719.68875pt>
+<Images/up_down_counter.png, id=19, 748.7975pt x 719.68875pt>
 File: Images/up_down_counter.png Graphic file (type png)
 <use Images/up_down_counter.png>
 Package pdftex.def Info: Images/up_down_counter.png  used on input line 54.
 (pdftex.def)             Requested size: 345.0pt x 331.58795pt.
 
 
-[3 <./Images/seven_segment.png>]
-<Images/binary_to_bcd.png, id=21, 748.7975pt x 719.68875pt>
+[4 <./Images/seven_segment.png>]
+<Images/binary_to_bcd.png, id=24, 748.7975pt x 719.68875pt>
 File: Images/binary_to_bcd.png Graphic file (type png)
 <use Images/binary_to_bcd.png>
 Package pdftex.def Info: Images/binary_to_bcd.png  used on input line 65.
 (pdftex.def)             Requested size: 345.0pt x 331.58795pt.
 
 
-[4 <./Images/up_down_counter.png>]
-<Images/hms_counter.png, id=26, 748.7975pt x 719.68875pt>
+[5 <./Images/up_down_counter.png>]
+<Images/hms_counter.png, id=29, 748.7975pt x 719.68875pt>
 File: Images/hms_counter.png Graphic file (type png)
 <use Images/hms_counter.png>
 Package pdftex.def Info: Images/hms_counter.png  used on input line 79.
 (pdftex.def)             Requested size: 345.0pt x 331.58795pt.
 
 
-[5 <./Images/binary_to_bcd.png>]
+[6 <./Images/binary_to_bcd.png>]
+<Images/mod_n_counter.png, id=35, 1134.2375pt x 652.4375pt>
+File: Images/mod_n_counter.png Graphic file (type png)
+<use Images/mod_n_counter.png>
+Package pdftex.def Info: Images/mod_n_counter.png  used on input line 92.
+(pdftex.def)             Requested size: 345.0pt x 198.45058pt.
 
-[6 <./Images/hms_counter.png>] (./Final.aux)
+
+[7 <./Images/hms_counter.png>]
+<Images/restartable_rate_generator.png, id=40, 857.2025pt x 569.12625pt>
+File: Images/restartable_rate_generator.png Graphic file (type png)
+<use Images/restartable_rate_generator.png>
+Package pdftex.def Info: Images/restartable_rate_generator.png  used on input line 105.
+(pdftex.def)             Requested size: 345.0pt x 229.0533pt.
+
+
+[8 <./Images/mod_n_counter.png>]
+<Images/top_time_display_v1.png, id=45, 887.315pt x 649.42625pt>
+File: Images/top_time_display_v1.png Graphic file (type png)
+<use Images/top_time_display_v1.png>
+Package pdftex.def Info: Images/top_time_display_v1.png  used on input line 119.
+(pdftex.def)             Requested size: 345.0pt x 252.50227pt.
+
+
+[9 <./Images/restartable_rate_generator.png>]
+<Images/pwm_generator.png, id=50, 901.3675pt x 579.16376pt>
+File: Images/pwm_generator.png Graphic file (type png)
+<use Images/pwm_generator.png>
+Package pdftex.def Info: Images/pwm_generator.png  used on input line 131.
+(pdftex.def)             Requested size: 345.0pt x 221.67523pt.
+
+
+[10 <./Images/top_time_display_v1.png>]
+<Images/rising_edge_detector.png, id=55, 901.3675pt x 579.16376pt>
+File: Images/rising_edge_detector.png Graphic file (type png)
+<use Images/rising_edge_detector.png>
+Package pdftex.def Info: Images/rising_edge_detector.png  used on input line 142.
+(pdftex.def)             Requested size: 345.0pt x 221.67523pt.
+
+
+[11 <./Images/pwm_generator.png>]
+<Images/button_hold_detect.png, id=60, 817.0525pt x 579.16376pt>
+File: Images/button_hold_detect.png Graphic file (type png)
+<use Images/button_hold_detect.png>
+Package pdftex.def Info: Images/button_hold_detect.png  used on input line 156.
+(pdftex.def)             Requested size: 345.0pt x 244.55504pt.
+
+
+[12 <./Images/rising_edge_detector.png>]
+<Images/button_hold_pulse.png, id=66, 817.0525pt x 579.16376pt>
+File: Images/button_hold_pulse.png Graphic file (type png)
+<use Images/button_hold_pulse.png>
+Package pdftex.def Info: Images/button_hold_pulse.png  used on input line 169.
+(pdftex.def)             Requested size: 345.0pt x 244.55504pt.
+
+
+[13 <./Images/button_hold_detect.png>]
+<Images/button_auto_repeat.png, id=71, 749.80125pt x 579.16376pt>
+File: Images/button_auto_repeat.png Graphic file (type png)
+<use Images/button_auto_repeat.png>
+Package pdftex.def Info: Images/button_auto_repeat.png  used on input line 183.
+(pdftex.def)             Requested size: 345.0pt x 266.48926pt.
+
+
+[14 <./Images/button_hold_pulse.png>]
+
+LaTeX Warning: Reference `fig:alr' on page 15 undefined on input line 190.
+
+<Images/armed_latch.png, id=76, 725.71124pt x 579.16376pt>
+File: Images/armed_latch.png Graphic file (type png)
+<use Images/armed_latch.png>
+Package pdftex.def Info: Images/armed_latch.png  used on input line 196.
+(pdftex.def)             Requested size: 345.0pt x 275.3354pt.
+
+
+[15 <./Images/button_auto_repeat.png>]
+<Images/edit_mode_selector.png, id=81, 727.71875pt x 649.42625pt>
+File: Images/edit_mode_selector.png Graphic file (type png)
+<use Images/edit_mode_selector.png>
+Package pdftex.def Info: Images/edit_mode_selector.png  used on input line 208.
+(pdftex.def)             Requested size: 345.0pt x 307.88611pt.
+
+
+[16 <./Images/armed_latch.png>]
+<Images/editable_counter.png, id=86, 746.79pt x 649.42625pt>
+File: Images/editable_counter.png Graphic file (type png)
+<use Images/editable_counter.png>
+Package pdftex.def Info: Images/editable_counter.png  used on input line 224.
+(pdftex.def)             Requested size: 345.0pt x 300.01802pt.
+
+
+[17 <./Images/edit_mode_selector.png>]
+<Images/key_synchroniser.png, id=91, 827.09pt x 649.42625pt>
+File: Images/key_synchroniser.png Graphic file (type png)
+<use Images/key_synchroniser.png>
+Package pdftex.def Info: Images/key_synchroniser.png  used on input line 238.
+(pdftex.def)             Requested size: 345.0pt x 270.8942pt.
+
+
+[18 <./Images/editable_counter.png>]
+<Images/decimal_display_driver.png, id=97, 754.82pt x 571.13374pt>
+File: Images/decimal_display_driver.png Graphic file (type png)
+<use Images/decimal_display_driver.png>
+Package pdftex.def Info: Images/decimal_display_driver.png  used on input line 251.
+(pdftex.def)             Requested size: 345.0pt x 261.04276pt.
+
+
+[19 <./Images/key_synchroniser.png>]
+<Images/user_top_watch_v1.png, id=102, 966.61125pt x 571.13374pt>
+File: Images/user_top_watch_v1.png Graphic file (type png)
+<use Images/user_top_watch_v1.png>
+Package pdftex.def Info: Images/user_top_watch_v1.png  used on input line 265.
+(pdftex.def)             Requested size: 345.0pt x 203.8476pt.
+
+
+[20 <./Images/decimal_display_driver.png>]
+<Images/user_top_watch_v2.png, id=107, 809.0225pt x 571.13374pt>
+File: Images/user_top_watch_v2.png Graphic file (type png)
+<use Images/user_top_watch_v2.png>
+Package pdftex.def Info: Images/user_top_watch_v2.png  used on input line 282.
+(pdftex.def)             Requested size: 345.0pt x 243.55217pt.
+
+
+[21 <./Images/user_top_watch_v1.png>]
+<Images/user_top_watch_v3.png, id=112, 1121.18875pt x 571.13374pt>
+File: Images/user_top_watch_v3.png Graphic file (type png)
+<use Images/user_top_watch_v3.png>
+Package pdftex.def Info: Images/user_top_watch_v3.png  used on input line 301.
+(pdftex.def)             Requested size: 345.0pt x 175.74242pt.
+
+
+[22 <./Images/user_top_watch_v2.png>]
+<Images/user_top_watch_v4.png, id=117, 913.4125pt x 571.13374pt>
+File: Images/user_top_watch_v4.png Graphic file (type png)
+<use Images/user_top_watch_v4.png>
+Package pdftex.def Info: Images/user_top_watch_v4.png  used on input line 319.
+(pdftex.def)             Requested size: 345.0pt x 215.71715pt.
+
+
+[23 <./Images/user_top_watch_v3.png>]
+
+[24 <./Images/user_top_watch_v4.png>]
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 353.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+File: t1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 353.
+
+Overfull \hbox (1.499pt too wide) in paragraph at lines 360--360
+[]  \T1/ntxtt/m/n/10 // Pressing start stop toggles stopwatch b/t running and stopped[] 
+ []
+
+
+Overfull \hbox (38.24889pt too wide) in paragraph at lines 360--360
+[]  \T1/ntxtt/m/n/10 // If stopped with a frozen display, lap unfreezes the display (no rst)[] 
+ []
+
+
+
+[25]
+Overfull \hbox (11.99896pt too wide) in paragraph at lines 448--448
+[]\T1/ntxtt/m/n/10 // Wave restartable rate generator testbench for max cycle of 1 case[] 
+ []
+
+
+Overfull \hbox (32.9989pt too wide) in paragraph at lines 448--448
+[]\T1/ntxtt/m/n/10 // Based of wave_restartable_rate_generator.v written by Jonathan Manton[] 
+ []
+
+
+
+[26]
+Overfull \hbox (11.99896pt too wide) in paragraph at lines 448--448
+[]    \T1/ntxtt/m/n/10 // Disable mid-cycle: counter resets, no stray tick on re-enable[] 
+ []
+
+<Images/restartable_rate_generator_one.png, id=136, 885.3075pt x 569.12625pt>
+File: Images/restartable_rate_generator_one.png Graphic file (type png)
+<use Images/restartable_rate_generator_one.png>
+Package pdftex.def Info: Images/restartable_rate_generator_one.png  used on input line 452.
+(pdftex.def)             Requested size: 345.0pt x 221.78465pt.
+
+
+[27]
+
+[28 <./Images/restartable_rate_generator_one.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 511--537
+\T1/ntxtlf/m/n/10 ware. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--537
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--537
+
+ []
+
+
+
+[29]
+
+[30]
+<Images/up_down_counter_reset.png, id=154, 797.98125pt x 572.1375pt>
+File: Images/up_down_counter_reset.png Graphic file (type png)
+<use Images/up_down_counter_reset.png>
+Package pdftex.def Info: Images/up_down_counter_reset.png  used on input line 620.
+(pdftex.def)             Requested size: 345.0pt x 247.35876pt.
+
+
+[31]
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+\T1/ntxtlf/m/n/10 ble for ba-sic count-ing func-tions and reg-is-ters. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+\T1/ntxtlf/m/n/10 is re-spon-si-ble for cor-rect time-keep-ing. 
+ []
+
+
+Underfull \hbox (badness 3240) in paragraph at lines 629--646
+\T1/ntxtlf/m/n/10 the cor-rect reg-is-ter. This layer is re-spon-si-ble for the lap logic. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--646
+\T1/ntxtlf/m/n/10 timer func-tion. 
+ []
+
+
+
+[32 <./Images/up_down_counter_reset.png>]
+Overfull \hbox (13.95908pt too wide) in paragraph at lines 651--654
+\T1/ntxtlf/m/n/10 The en-able sig-nal of the counter is de-cided us-ing the com-bi-na-tional logic [][]\T1/ntxtt/m/n/10 tick && enable[]\T1/ntxtlf/m/n/10 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--687
+\T1/ntxtlf/m/n/10 next state logic. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--687
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--687
+\T1/ntxtlf/m/n/10 These were linked to the counter mod-ules. 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 672--687
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 689--701
+
+ []
+
+
+
+[33]
+<Images/elaborated.png, id=165, 1502.61375pt x 430.60875pt>
+File: Images/elaborated.png Graphic file (type png)
+<use Images/elaborated.png>
+Package pdftex.def Info: Images/elaborated.png  used on input line 733.
+(pdftex.def)             Requested size: 345.0pt x 98.86708pt.
+
+
+[34]
+<Images/proc.png, id=169, 1197.47375pt x 407.5225pt>
+File: Images/proc.png Graphic file (type png)
+<use Images/proc.png>
+Package pdftex.def Info: Images/proc.png  used on input line 746.
+(pdftex.def)             Requested size: 345.0pt x 117.40742pt.
+<Images/techmap.png, id=170, 3228.06pt x 774.895pt>
+File: Images/techmap.png Graphic file (type png)
+<use Images/techmap.png>
+Package pdftex.def Info: Images/techmap.png  used on input line 760.
+(pdftex.def)             Requested size: 345.0pt x 82.8148pt.
+
+
+[35 <./Images/elaborated.png> <./Images/proc.png>]
+<Images/abc.png, id=174, 3228.06pt x 774.895pt>
+File: Images/abc.png Graphic file (type png)
+<use Images/abc.png>
+Package pdftex.def Info: Images/abc.png  used on input line 768.
+(pdftex.def)             Requested size: 345.0pt x 82.8148pt.
+
+
+[36 <./Images/techmap.png> <./Images/abc.png>] (./Final.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 4038 strings out of 473190
- 64624 string characters out of 5715800
- 456976 words of memory out of 5000000
- 27242 multiletter control sequences out of 15000+600000
- 587396 words of font info for 54 fonts, out of 8000000 for 9000
+ 4263 strings out of 473190
+ 71049 string characters out of 5715800
+ 467572 words of memory out of 5000000
+ 27463 multiletter control sequences out of 15000+600000
+ 587718 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 80i,7n,93p,386b,271s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on Final.pdf (7 pages, 295691 bytes).
+ 80i,7n,93p,386b,275s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/newtx/ztmr.pfb>
+Output written on Final.pdf (37 pages, 2059614 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 26 compressed objects within 1 object stream
+ 220 PDF objects out of 1000 (max. 8388607)
+ 111 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 136 words of extra memory for PDF output out of 10000 (max. 10000000)
 

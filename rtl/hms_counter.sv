@@ -1,14 +1,24 @@
-// Seven segment display driver for hex digits
+// Hour Minute Second counter
+//  Chains three counters with specified bit widths and maximum values
+//  to allow the rollover of one counter to trigger the next. Ideally used
+//  to create a standard clock counter.
 //
 // Parameter:
-//  Active Low (int) : 1 describes the hardware as active low
-//    0 describes active high
+//  N_HOURS   : Number of hours before rollover
+//  N_MINUTES : Number of minutes before rollover
+//  N_SECONDS : Number of seconds before rollover
+//
+//  W_HOURS   : Bit width of hours register
+//  W_MINUTES : Bit width of minutes register
+//  W_SECONDS : Bit width of seconds register
 //
 // Ports:
-//  digit    [3:0] : Hexedecimal digit to display
-//  blank          : When high, all segments are off, otherwise all segments
-//                   are on
-//  segments [6:0] : Segment outputs [g,f,e,d,c,b,a]
+//  clk                     : Input for clock signal (1Hz)
+//  enable                  : Enables counting at 1, disables otherwise
+//  hours   [W_HOURS-1:0]   : register storing current hour
+//  minutes [W_MINUTES-1:0] : register storing current minute
+//  seconds [W_SECONDS-1:0] : register storing current second
+// 
 `timescale 1ns / 1ps
 
 module hms_counter #(

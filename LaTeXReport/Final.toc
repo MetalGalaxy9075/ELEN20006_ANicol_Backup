@@ -1,14 +1,97 @@
-\contentsline {section}{\numberline {0.1}Project Setup}{2}{}%
-\contentsline {subsection}{\numberline {0.1.1}Backup}{2}{}%
-\contentsline {section}{\numberline {0.2}Modules}{2}{}%
-\contentsline {subsection}{\numberline {0.2.1}Module 1: Seven Segment}{3}{}%
-\contentsline {subsubsection}{Waveform}{3}{}%
-\contentsline {subsection}{\numberline {0.2.2}Module 2: Up Down Counter}{3}{}%
-\contentsline {subsubsection}{Waveform}{3}{}%
-\contentsline {subsection}{\numberline {0.2.3}Module 3: Binary to BCD}{4}{}%
+\contentsline {section}{\numberline {0.1}Project Setup}{3}{}%
+\contentsline {subsection}{\numberline {0.1.1}Backup}{3}{}%
+\contentsline {section}{\numberline {0.2}Assignment 1 Modules}{3}{}%
+\contentsline {subsection}{\numberline {0.2.1}Module 1: Seven Segment}{4}{}%
 \contentsline {subsubsection}{Waveform}{4}{}%
-\contentsline {subsection}{\numberline {0.2.4}Module 4: HMS Counter}{5}{}%
+\contentsline {subsection}{\numberline {0.2.2}Module 2: Up Down Counter}{4}{}%
+\contentsline {subsubsection}{Waveform}{4}{}%
+\contentsline {subsection}{\numberline {0.2.3}Module 3: Binary to BCD}{5}{}%
 \contentsline {subsubsection}{Waveform}{5}{}%
-\contentsline {section}{\numberline {0.3}Report Qestions}{6}{}%
-\contentsline {subsection}{\numberline {0.3.1}Report 1}{6}{}%
-\contentsline {subsection}{\numberline {0.3.2}Report 4}{6}{}%
+\contentsline {subsection}{\numberline {0.2.4}Module 4: HMS Counter}{6}{}%
+\contentsline {subsubsection}{Waveform}{6}{}%
+\contentsline {subsection}{\numberline {0.2.5}Module 5: Mod N Counter}{7}{}%
+\contentsline {subsubsection}{Waveform}{7}{}%
+\contentsline {subsection}{\numberline {0.2.6}Module 6: Restartable Rate Generator}{8}{}%
+\contentsline {subsubsection}{Waveform}{8}{}%
+\contentsline {subsection}{\numberline {0.2.7}Module 7: Top Time Display (v1)}{9}{}%
+\contentsline {subsubsection}{Waveform}{9}{}%
+\contentsline {subsection}{\numberline {0.2.8}Module 8: Pulse Width Modulation Generator}{10}{}%
+\contentsline {subsubsection}{Waveform}{10}{}%
+\contentsline {subsection}{\numberline {0.2.9}Module 9: Rising Edge Detector}{11}{}%
+\contentsline {subsubsection}{Waveform}{11}{}%
+\contentsline {subsection}{\numberline {0.2.10}Module 10: Button Hold Detect}{12}{}%
+\contentsline {subsubsection}{Waveform}{12}{}%
+\contentsline {subsection}{\numberline {0.2.11}Module 11: Button Hold Pulse}{13}{}%
+\contentsline {subsubsection}{Waveform}{13}{}%
+\contentsline {subsection}{\numberline {0.2.12}Module 12: Button Auto Repeat}{14}{}%
+\contentsline {subsubsection}{Waveform}{14}{}%
+\contentsline {subsection}{\numberline {0.2.13}Module 13: Arming Latch}{15}{}%
+\contentsline {subsubsection}{Waveform}{15}{}%
+\contentsline {subsection}{\numberline {0.2.14}Module 14: Edit Mode Selector}{16}{}%
+\contentsline {subsubsection}{Waveform}{16}{}%
+\contentsline {subsection}{\numberline {0.2.15}Module 15: Editable Counter}{17}{}%
+\contentsline {subsubsection}{Waveform}{17}{}%
+\contentsline {subsection}{\numberline {0.2.16}Module 16: Key Synchroniser}{18}{}%
+\contentsline {subsubsection}{Waveform}{18}{}%
+\contentsline {subsection}{\numberline {0.2.17}Module 17: Decimal Display Driver}{19}{}%
+\contentsline {subsubsection}{Waveform}{19}{}%
+\contentsline {subsection}{\numberline {0.2.18}Module 18: User Top Watch V1}{20}{}%
+\contentsline {subsubsection}{Waveform}{20}{}%
+\contentsline {subsection}{\numberline {0.2.19}Module 19: User Top Watch V2}{21}{}%
+\contentsline {subsubsection}{Waveform}{21}{}%
+\contentsline {subsection}{\numberline {0.2.20}Module 20: User Top Watch V3}{22}{}%
+\contentsline {subsubsection}{Waveform}{22}{}%
+\contentsline {subsection}{\numberline {0.2.21}Module 21: User Top Watch V4}{23}{}%
+\contentsline {subsubsection}{Waveform}{23}{}%
+\contentsline {section}{\numberline {0.3}Assignment 2 Modules}{24}{}%
+\contentsline {subsection}{\numberline {0.3.1}Module 22: Cascade Counter}{25}{}%
+\contentsline {subsubsection}{Description}{25}{}%
+\contentsline {subsection}{\numberline {0.3.2}Module 23: Stopwatch Counter}{25}{}%
+\contentsline {subsubsection}{Description}{25}{}%
+\contentsline {subsection}{\numberline {0.3.3}Module 24: Snapshot Multiplexer}{25}{}%
+\contentsline {subsubsection}{Description}{25}{}%
+\contentsline {subsection}{\numberline {0.3.4}Module 25: Stopwatch Control}{25}{}%
+\contentsline {subsubsection}{Description}{25}{}%
+\contentsline {subsection}{\numberline {0.3.5}Module 26: User Top Stopwatch Version 1}{25}{}%
+\contentsline {subsection}{\numberline {0.3.6}Module 27: User Brightness Wrapper}{25}{}%
+\contentsline {subsection}{\numberline {0.3.7}Module 28: User Top Timepiece V1}{26}{}%
+\contentsline {subsection}{\numberline {0.3.8}Module 29: User Top Brightness Timepiece}{26}{}%
+\contentsline {section}{\numberline {0.4}Assignment 1 Questions}{26}{}%
+\contentsline {subsection}{\numberline {0.4.1}Report 1}{26}{}%
+\contentsline {subsection}{\numberline {0.4.2}Report 4}{26}{}%
+\contentsline {subsection}{\numberline {0.4.3}Report 5}{26}{}%
+\contentsline {subsection}{\numberline {0.4.4}Report 6}{26}{}%
+\contentsline {subsection}{\numberline {0.4.5}Report 7}{28}{}%
+\contentsline {subsection}{\numberline {0.4.6}Report 8}{28}{}%
+\contentsline {subsection}{\numberline {0.4.7}Report 9}{28}{}%
+\contentsline {subsection}{\numberline {0.4.8}Report 10}{29}{}%
+\contentsline {subsection}{\numberline {0.4.9}Report 11}{29}{}%
+\contentsline {subsection}{\numberline {0.4.10}Report 12}{29}{}%
+\contentsline {subsection}{\numberline {0.4.11}Report 13}{29}{}%
+\contentsline {subsection}{\numberline {0.4.12}Report 14}{29}{}%
+\contentsline {subsection}{\numberline {0.4.13}Report 15}{30}{}%
+\contentsline {subsection}{\numberline {0.4.14}Report 16}{30}{}%
+\contentsline {subsection}{\numberline {0.4.15}Report 17}{30}{}%
+\contentsline {subsection}{\numberline {0.4.16}Report 18}{30}{}%
+\contentsline {section}{\numberline {0.5}Assignment 2 Questions}{31}{}%
+\contentsline {subsection}{\numberline {0.5.1}Report 1}{31}{}%
+\contentsline {subsection}{\numberline {0.5.2}Report 2}{31}{}%
+\contentsline {subsection}{\numberline {0.5.3}Report 3}{31}{}%
+\contentsline {subsection}{\numberline {0.5.4}Report 4}{31}{}%
+\contentsline {subsection}{\numberline {0.5.5}Report 5}{32}{}%
+\contentsline {subsection}{\numberline {0.5.6}Report 6}{32}{}%
+\contentsline {subsection}{\numberline {0.5.7}Report 7}{33}{}%
+\contentsline {subsection}{\numberline {0.5.8}Report 8}{33}{}%
+\contentsline {subsection}{\numberline {0.5.9}Report 9}{33}{}%
+\contentsline {subsection}{\numberline {0.5.10}Report 10}{33}{}%
+\contentsline {subsection}{\numberline {0.5.11}Report 11}{33}{}%
+\contentsline {subsection}{\numberline {0.5.12}Report 12}{33}{}%
+\contentsline {subsection}{\numberline {0.5.13}Report 13}{34}{}%
+\contentsline {subsection}{\numberline {0.5.14}Report 14}{34}{}%
+\contentsline {subsection}{\numberline {0.5.15}Report 15}{34}{}%
+\contentsline {subsection}{\numberline {0.5.16}Report 16}{34}{}%
+\contentsline {subsection}{\numberline {0.5.17}Report 17}{35}{}%
+\contentsline {subsection}{\numberline {0.5.18}Report 18}{35}{}%
+\contentsline {subsection}{\numberline {0.5.19}Report 19}{36}{}%
+\contentsline {subsection}{\numberline {0.5.20}Report 20}{36}{}%
+\contentsline {subsection}{\numberline {0.5.21}Report 21}{36}{}%

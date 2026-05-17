@@ -1,8 +1,19 @@
-// Code written by Alasdair Nicol, Student ID: 1759586
-// Based of the decimal_display_driver template file
-
-// No AI was used in writing this file
-
+// ------------------------------------------------------------------
+// decimal_display_driver
+// ------------------------------------------------------------------
+// Board-specific display driver for the DE1-SoC HEX displays.
+//
+// This module presents three decimal values (0-99) on the six
+// seven-segment HEX displays (HEX5..HEX0).
+// Each value uses two digits.
+//
+// The module accepts numeric values and blanking controls.
+// Internally, it handles:
+//   - binary-to-BCD conversion
+//   - seven-segment decoding
+//   - digit blanking
+//   - active-low segment polarity
+// ------------------------------------------------------------------
 `timescale 1ns / 1ps
 
 module decimal_display_driver (
@@ -30,6 +41,55 @@ module decimal_display_driver (
     output logic [6:0] HEX5
 );
 
+  // Pack scalar ports into arrays for use in the generate loop.
+  // value_a[i] drives HEX(2i+1) (tens) and HEX(2i) (ones).
+  logic [6:0] value_a[3];  // Defining array [value0, value1, value2]
+  assign value_a[0] = value0;
+  assign value_a[1] = value1;
+  assign value_a[2] = value2;
 
+  logic blank_a[3];  // Defining array [blank0, blank1, blank2]
+  assign blank_a[0] = blank0;
+  assign blank_a[1] = blank1;
+  assign blank_a[2] = blank2;
+
+  logic [6:0] hex_a[6];
+  assign HEX0 = hex_a[0];
+  assign HEX1 = hex_a[1];
+  assign HEX2 = hex_a[2];
+  assign HEX3 = hex_a[3];
+  assign HEX4 = hex_a[4];
+  assign HEX5 = hex_a[5];
+
+  genvar i;
+  generate
+    for (i = 0; i < 3; i = i + 1) begin : g_digit_pair
+      logic [3:0] tens;
+      logic [3:0] ones;
+
+      binary_to_bcd u_bcd_converter (
+          .bin (value_a[i]),
+          .tens(tens),
+          .ones(ones)
+      );
+
+      seven_segment #(
+          .ACTIVE_LOW(1)
+      ) u_seven_seg_tens (
+          .digit(tens),
+          .blank(blank_a[i]),
+          .segments(hex_a[(2*i)+1])
+      );
+      seven_segment #(
+          .ACTIVE_LOW(1)
+      ) u_seven_seg_ones (
+          .digit(ones),
+          .blank(blank_a[i]),
+          .segments(hex_a[2*i])
+      );
+    end
+  endgenerate
 
 endmodule
+
+

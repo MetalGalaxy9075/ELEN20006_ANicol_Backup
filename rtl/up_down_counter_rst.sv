@@ -1,6 +1,6 @@
-// Up down counter:
+// Up down counter reset:
 //  Counts up or down by one unit to a given maximum value using a 
-//  specified bit width
+//  specified bit width. Also includes a reset function
 //
 // Parameter:
 //  int MAX : maximum count value
@@ -11,14 +11,16 @@
 //  enable            : Enables counting function. Holds current val if 0
 //  up                : Counter counts up when up is 1, otherwise counts down
 //  logic [WIDTH-1:0] : Binary encoded count output
+//  rst               : When pulled high, resets counter to 0
 //
 `timescale 1ns / 1ps
 
-module up_down_counter #(
+module up_down_counter_rst #(
     parameter int MAX   = 2,
     parameter int WIDTH = 2
 ) (
     input logic clk,
+    input logic rst,
     input logic enable,
     input logic up,
     output logic [WIDTH-1:0] count
@@ -32,10 +34,11 @@ module up_down_counter #(
   initial count = '0;
 
   always_ff @(posedge clk) begin
-    if (enable) count <= next_count;
+    if (rst) count <= '0;
+    else if (enable) count <= next_count;
   end
   always_comb begin
-    if (up) next_count = (count < Max) ? count + One : Zero;
+    if (up) next_count = (count < (Max)) ? count + One : Zero;
     else if (!up) next_count = (count > Zero) ? count - One : Max;
     else next_count = count;
   end
