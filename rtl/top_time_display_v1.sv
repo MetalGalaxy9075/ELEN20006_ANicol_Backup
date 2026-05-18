@@ -30,8 +30,6 @@ module top_time_display_v1 #(
 );
 
   logic second_pulse, one_hz_pulse, twenty_five_hz_pulse, thousand_hz_pulse, pulse;
-  logic [1:0] state;
-  logic [1:0] next_state;
   logic [4:0] hours;
   logic [5:0] minutes;
   logic [5:0] seconds;

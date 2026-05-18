@@ -23,8 +23,8 @@ module user_top_watch_v1 #(
     /* verilator lint_off UNUSED */
     input logic [3:0] button,
     input logic [9:0] sw,
-    /* verilator lint_on UNUSED */
     output logic [9:0] led,
+    /* verilator lint_on UNUSED */
     output logic [6:0] hours_disp,
     output logic [6:0] minutes_disp,
     output logic [6:0] seconds_disp,

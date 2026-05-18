@@ -38,9 +38,6 @@ module hms_counter #(
     output logic [W_MINUTES-1:0] minutes,
     output logic [W_SECONDS-1:0] seconds
 );
-  localparam logic [W_HOURS-1:0] MaxHours = W_HOURS'(N_HOURS - 1);
-  localparam logic [W_MINUTES-1:0] MaxMinutes = W_MINUTES'(N_MINUTES - 1);
-  localparam logic [W_SECONDS-1:0] MaxSeconds = W_SECONDS'(N_SECONDS - 1);
   localparam logic [W_SECONDS-1:0] SecondsZero = W_SECONDS'(0);
   localparam logic [W_MINUTES-1:0] MinutesZero = W_MINUTES'(0);
 
@@ -52,7 +49,7 @@ module hms_counter #(
   logic [W_MINUTES-1:0] prev_minutes;
 
   up_down_counter #(
-      .MAX  (MaxSeconds),
+      .MAX  (N_SECONDS - 1),
       .WIDTH(W_SECONDS)
   ) u_second (
       .clk(clk),
@@ -61,7 +58,7 @@ module hms_counter #(
       .count(seconds)
   );
   up_down_counter #(
-      .MAX  (MaxMinutes),
+      .MAX  (N_MINUTES - 1),
       .WIDTH(W_MINUTES)
   ) u_minute (
       .clk(second_rollover),
@@ -70,7 +67,7 @@ module hms_counter #(
       .count(minutes)
   );
   up_down_counter #(
-      .MAX  (MaxHours),
+      .MAX  (N_HOURS - 1),
       .WIDTH(W_HOURS)
   ) u_hour (
       .clk(minute_rollover),

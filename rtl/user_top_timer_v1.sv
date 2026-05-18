@@ -9,9 +9,11 @@ module user_top_timer_v1 #(
     output logic [2:0] probe_mode_enable,
 `endif
     input logic clk,
+    /* verilator lint_off UNUSED */
     input logic [3:0] button,
     input logic [9:0] sw,
     output logic [9:0] led,
+    /* verilator lint_on UNUSED */
     output logic [6:0] hours_disp,
     output logic [6:0] minutes_disp,
     output logic [6:0] seconds_disp,
@@ -40,7 +42,9 @@ module user_top_timer_v1 #(
   logic [4:0] hours;
   logic hours_edit;
   logic hours_tick;
+  /* verilator lint_off UNUSED */
   logic hours_borrow;
+  /* verilator lint_on UNUSED */
   logic hours_inc;
   logic hours_dec;
   logic clr;
@@ -176,6 +180,7 @@ module user_top_timer_v1 #(
 
   // decrementing auto pulse
   logic dec_pulse;
+  logic dec_enable;
   button_auto_repeat #(
       .HOLD_CYCLES  (CYCLES_PER_SECOND),
       .REPEAT_CYCLES(CYCLES_PER_SECOND / 10)
@@ -188,8 +193,6 @@ module user_top_timer_v1 #(
   // -------------------
   // Assigning variables
   // -------------------
-
-  logic dec_enable;
 
   assign dec_enable = !mode_change_pulse;  // block conflict
 
@@ -217,8 +220,10 @@ module user_top_timer_v1 #(
   assign seconds_disp = {1'b0, seconds};
 
   assign clr = 1'b0;
-  assign run = (state == Running);
+  assign run = (state == Running) && (edit_hms == 3'b000);
   assign all_zeros = (seconds == '0 && minutes == '0 && hours == '0);
+
+  assign led = 10'b0;
 
 
 `ifdef FORMAL

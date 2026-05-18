@@ -20,9 +20,11 @@ module user_top_stopwatch_v1 #(
     parameter int CYCLES_PER_SECOND = 50_000_000
 ) (
     input logic clk,
+    /* verilator lint_off UNUSED */
     input logic [3:0] button,
     input logic [9:0] sw,
     output logic [9:0] led,
+    /* verilator lint_on UNUSED */
     output logic [6:0] hours_disp,
     output logic [6:0] minutes_disp,
     output logic [6:0] seconds_disp,
@@ -101,5 +103,6 @@ module user_top_stopwatch_v1 #(
   );
 
   assign minutes_disp[6] = 0;
+  assign led = 10'b0;
 
 endmodule

@@ -4,9 +4,11 @@ module user_top_timepiece_v1 #(
     parameter int CYCLES_PER_SECOND = 50_000_000
 ) (
     input logic clk,
+    /* verilator lint_off UNUSED */
     input logic [3:0] button,
     input logic [9:0] sw,
     output logic [9:0] led,
+    /* verilator lint_on UNUSED */
     output logic [6:0] hours_disp,
     output logic [6:0] minutes_disp,
     output logic [6:0] seconds_disp,
@@ -97,9 +99,11 @@ module user_top_timepiece_v1 #(
   assign ui_top_in.sw = sw;
   assign ui_top_in.button = button;
 
+  /* verilator lint_off UNUSED */
   ui_in_t ui_top_in_no_buttons;
   assign ui_top_in_no_buttons.sw = sw;
   assign ui_top_in_no_buttons.button = '0;
+  /* verilator lint_on UNUSED */
 
   ui_out_t ui_top_out;
   assign led = ui_top_out.led;
@@ -112,7 +116,8 @@ module user_top_timepiece_v1 #(
 
   logic [1:0] mode_sel;
   assign mode_sel = sw[1:0];
-  always_comb
+  // Always @ (*) used instead of always_comb to supress iverilog warning
+  always @(*)
     case (mode_sel)
       // Stopwatch
       2'b01: begin
